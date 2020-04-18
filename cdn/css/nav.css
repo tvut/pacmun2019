@@ -1,0 +1,410 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin: 0px;
+    transition: .2s all;
+    z-index: 999;
+}
+
+nav *{
+    transition: .2s all;
+}
+
+nav a,nav a:hover{
+    text-decoration: none;
+    border-bottom: none;
+    opacity: 1;
+}
+
+nav ul {
+    overflow: hidden;
+    padding: 0;
+}
+
+nav img:hover{
+    opacity: .7;
+}
+
+nav li {
+    width: auto;
+    text-align: right;
+    font-family: "BebasNeueRegular", “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”,
+    “Droid Sans”, “Helvetica Neue”, sans-serif;
+    font-size: 60px;
+}
+
+nav ul ul {
+    display: none;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+nav ul li:hover > ul {
+    display: block;
+
+}
+
+nav ul li {
+    float: left;
+}
+
+.navbar {
+    min-width: 290px;
+    background-color: #fff;
+    overflow: visible;
+    margin: 0;
+}
+
+.navbar .nav {
+    position: relative;
+    display: block;
+    float: right;
+    margin: 0;
+    list-style: none;
+}
+
+ul {
+    overflow: visible;
+    padding: 0;
+}
+
+.navbar .nav > li > a {
+    font-size: 13px;
+    float: right;
+    color: #999;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.2s ease-in-out;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    background-color: transparent;
+    color: #1792a7;
+    text-decoration: none;
+}
+
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+.nav:after {
+    clear: both;
+}
+
+.nav > li {
+    position: relative;
+    display: inline-block;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #FAFAFB;
+}
+
+.navbar:before, .navbar:after {
+    content: " ";
+    display: table;
+}
+
+.navbar:after {
+    clear: both;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px
+}
+
+.navbar-nav {
+    margin: 26.5px -15px
+}
+
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 24px;
+}
+
+.navbar a:after, .navbar a:hover:after, .dropdown-menu a:after, div.token-input-dropdown-bootstrap a:after, .ui-autocomplete a:after, .dropdown-menu a:hover:after, div.token-input-dropdown-bootstrap a:hover:after, .ui-autocomplete a:hover:after {
+    border: none
+}
+
+.navheight {
+    height: 20vh;
+    overflow: hidden;
+}
+
+.topadj {
+    top: 86px;
+    transition: top .5s;
+}
+
+.spacer {
+    width: 100vw;
+    height: 20vh;
+}
+
+.navbar a:focus {
+    color: inherit
+}
+
+.navbar-nav > li > a {
+    font-weight: bold
+}
+
+.navbar-nav > li > a.active {
+    color: #000
+}
+
+.primary-nav > li a {
+    font-size: 13px;
+    width: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: right;
+    margin-left: 25px;
+    border-top: 12px solid #f4f4f4;
+    padding-top: 8px;
+    padding-bottom: 0;
+}
+
+.primary-nav > li a:before {
+    content: " ";
+    position: absolute;
+    top: -12px;
+    right: 0;
+    left: 100%;
+    border-top: 12px solid #1792a7;
+    transition: left 0.15s ease-in
+}
+
+.primary-nav > li a.active:before, .primary-nav > li a:hover:before {
+    left: 0
+}
+
+/* Mobile Menu */
+.mobilenav ::-webkit-scrollbar {
+    width: 0px;
+}
+.mobilenav {
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #1792a7;
+}
+
+.innernav {
+    height: 80vh;
+    overflow: scroll;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.innernav h1 {
+    color: white;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 2vh;
+    border-right: none;
+    padding-right: 12px;
+}
+
+.innernav h1:hover, .innernav h1:focus {
+    opacity: .8;
+}
+
+#hide {
+    position: fixed;
+    bottom: 5vh;
+    left: 5vh;
+}
+
+/* Mobile Menu Close Button */
+
+.close {
+    position: relative;
+    display: inline-block;
+    width: 10vh;
+    height: 10vh;
+    overflow: hidden;
+}
+
+.close:hover::before, .close:hover::after {
+    background: #1792a7;
+}
+
+.close::before, .close::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: white;
+}
+
+.close::before {
+    transform: rotate(45deg);
+}
+
+.close::after {
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 1240px) {
+    .navbar .nav > li > a {
+        font-size: 16px;
+        float: none;
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 1056px) {
+    .navbar .nav > li > a {
+        padding: 0px !important;
+    }
+
+    .navbar .nav {
+        position: relative;
+        float: right !important;
+        list-style: none;
+    }
+
+    .navbar-nav {
+        float: none !important;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .topadj {
+        top: 100px !important;
+    }
+
+    .navheight {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .spacer {
+        height: 100px;
+    }
+
+    .navbar a {
+        width: 80px !important;
+        font-size: 12px !important;
+    }
+
+    .navbar-nav {
+        margin: 0px !important;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 53px;
+        padding-bottom: 53px;
+        width: 70px !important;
+        font-size: 12px !important;
+        margin-left: 15px !important;
+    }
+
+    .navbar-right {
+        float: right
+    }
+
+    .nav > li {
+        float: left
+    }
+
+}
+.navShow{
+    display:none;
+}
+@media (max-width: 767px) {
+    .navHide{
+        display:none;
+    }
+    .navShow{
+        display:block !important;
+    }
+    .topadj {
+        top: 80px !important;
+    }
+
+    .navheight {
+        height: 80px;
+        overflow: hidden;
+    }
+
+    .spacer {
+        height: 80px;
+    }
+
+    .navbar a {
+        font-size: 10px !important;
+        width: 60px !important;
+    }
+
+    .navbar .nav {
+        margin-top: 0px !important;
+        width: auto !important;
+
+    }
+
+    .primary-nav > li a {
+        font-size: 10px !important;
+        width: 60px !important;
+        margin-left: 8px !important;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 6px !important;
+        width: 40px !important;
+    }
+
+    .navbar .nav {
+        margin-top: 0px !important;
+        width: auto !important;
+    }
+
+    .primary-nav > li a {
+        font-size: 6px !important;
+        width: 40px !important;
+        margin-left: 5px !important;
+        padding: 0px !important;
+    }
+}

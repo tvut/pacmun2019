@@ -1,0 +1,20 @@
+/* FONTS */
+@font-face {
+    font-family: BebasNeueRegular;
+    src: url('../fonts/BebasNeue Regular.otf');
+}
+
+@font-face {
+    font-family: SifonnBasic;
+    src: url('../fonts/SIFONN_BASIC.otf');
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url('../fonts/Montserrat-Light.otf');
+}
+
+@font-face {
+    font-family: BebasNeueLight;
+    src: url('../fonts/BebasNeue Light.otf');
+}

@@ -1,0 +1,30 @@
+<script type="text/javascript">
+        $(document).ready(function () {
+            var scroll_pos = 0;
+            $(document).scroll(function () {
+                scroll_pos = $(this).scrollTop();
+                if (scroll_pos == ($(window).height() * 2)) {
+                    $(window).scrollTop($(window).height() * 3);
+                }
+                if (($(window).height() * .5 + scroll_pos) > $(window).height()) {
+                    $('#expand').css({
+                        "height": $(window).height() + "px"
+                    });
+                    $('#biglogo').css({
+                        "height": $(window).height() + "px",
+                        "margin-left": -$(window).height() / 2 + "px",
+                        "margin-top": -$(window).height() / 2 + "px"
+                    });
+                } else {
+                    $('#expand').css({
+                        "height": $(window).height() * .5 + scroll_pos + "px"
+                    });
+                    $('#biglogo').css({
+                        "height": $(window).height() * .5 + scroll_pos + "px",
+                        "margin-left": -($(window).height() * .5 + scroll_pos) / 2 + "px",
+                        "margin-top": -($(window).height() * .5 + scroll_pos) / 2 + "px"
+                    });
+                }
+            });
+        });
+    </script>
